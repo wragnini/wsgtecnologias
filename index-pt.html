@@ -1,37 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WSG Tecnologias LTDA - Corporate Page</title>
-  <meta name="description" content="Corporate page of WSG Tecnologias LTDA for company identification and contact." />
-  <link rel="alternate" hreflang="en" href="index.html" />
+  <title>WSG Tecnologias LTDA - Pagina institucional</title>
+  <meta name="description" content="Pagina institucional da WSG Tecnologias LTDA para identificacao da empresa e contato." />
   <link rel="alternate" hreflang="pt-BR" href="index-pt.html" />
+  <link rel="alternate" hreflang="en" href="index.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet" />
-  <script>
-    (function () {
-      try {
-        var stored = localStorage.getItem("wsg_lang_pref");
-        if (stored === "en") return;
-        if (stored === "pt") {
-          window.location.replace("index-pt.html");
-          return;
-        }
-        var langs = navigator.languages && navigator.languages.length
-          ? navigator.languages
-          : [navigator.language || ""];
-        var prefersPt = langs.some(function (lang) {
-          return /^pt(?:-|$)/i.test(lang);
-        });
-        if (prefersPt) {
-          window.location.replace("index-pt.html");
-        }
-      } catch (err) {
-      }
-    })();
-  </script>
   <style>
     :root {
       --bg: #f5f7f2;
@@ -274,99 +252,98 @@
 <body>
   <main class="container">
     <div class="topline">
-      <nav class="lang-switch" aria-label="Language switch">
-        <a href="index-pt.html" data-lang="pt" lang="pt-BR">PT</a>
+      <nav class="lang-switch" aria-label="Seletor de idioma">
+        <a href="index-pt.html" data-lang="pt" lang="pt-BR" class="is-active">PT</a>
         <span>|</span>
-        <a href="index.html" data-lang="en" lang="en" class="is-active">EN</a>
+        <a href="index.html" data-lang="en" lang="en">EN</a>
       </nav>
     </div>
 
     <section class="hero">
       <div>
-        <span class="tag">Active status</span>
+        <span class="tag">Situacao ativa</span>
         <h1>WSG Tecnologias LTDA</h1>
         <p class="subtitle">
-          Information technology company focused on software development,
-          online systems operations, and technical support for digital products.
+          Empresa de tecnologia da informacao focada em desenvolvimento de software,
+          operacao de sistemas online e suporte tecnico para produtos digitais.
         </p>
       </div>
       <div class="highlights">
         <article class="stat">
-          <b>Tax ID</b>
+          <b>CNPJ</b>
           <span>24.743.590/0001-00</span>
         </article>
         <article class="stat">
-          <b>Opening Date</b>
+          <b>Abertura</b>
           <span>23/04/2016</span>
         </article>
         <article class="stat">
-          <b>Company Size</b>
+          <b>Porte</b>
           <span>ME</span>
         </article>
         <article class="stat">
-          <b>Location</b>
+          <b>Base</b>
           <span>Curitiba - PR</span>
         </article>
       </div>
     </section>
 
     <section class="card" style="margin-top: 18px;">
-      <h2>Business scope</h2>
+      <h2>Setor de atuacao</h2>
       <p>
-        WSG Tecnologias LTDA develops and maintains digital applications,
-        backend systems, online platforms, and data processing services.
-        The company provides software development, technical support,
-        and online communication systems operations.
+        A WSG Tecnologias LTDA desenvolve e mantem aplicacoes digitais, sistemas backend,
+        plataformas online e servicos de processamento de dados. A empresa presta servicos
+        de desenvolvimento de software, suporte tecnico e operacao de sistemas de comunicacao online.
       </p>
       <div class="chips">
-        <span class="chip">Software Development</span>
-        <span class="chip">Mobile Applications</span>
-        <span class="chip">Backend and APIs</span>
-        <span class="chip">Online Systems</span>
-        <span class="chip">Data Processing</span>
-        <span class="chip">IT Technical Support</span>
-        <span class="chip">Communication Platforms</span>
-        <span class="chip">Web Services</span>
+        <span class="chip">Desenvolvimento de Software</span>
+        <span class="chip">Aplicativos Mobile</span>
+        <span class="chip">Backend e APIs</span>
+        <span class="chip">Sistemas Online</span>
+        <span class="chip">Processamento de Dados</span>
+        <span class="chip">Suporte Tecnico em TI</span>
+        <span class="chip">Plataformas de Comunicacao</span>
+        <span class="chip">Servicos Web</span>
       </div>
     </section>
 
     <section class="grid">
       <article class="card">
-        <h2>Company details</h2>
+        <h2>Identificacao</h2>
         <dl>
-          <dt>Corporate name</dt><dd>WSG TECNOLOGIAS LTDA</dd>
-          <dt>Trade name</dt><dd>WSG TECNOLOGIAS</dd>
-          <dt>Tax ID</dt><dd>24.743.590/0001-00</dd>
-          <dt>Opening date</dt><dd>23/04/2016</dd>
-          <dt>Company size</dt><dd>ME</dd>
-          <dt>Legal nature</dt><dd>Sociedade Empresaria Limitada</dd>
+          <dt>Razao social</dt><dd>WSG TECNOLOGIAS LTDA</dd>
+          <dt>Nome fantasia</dt><dd>WSG TECNOLOGIAS</dd>
+          <dt>CNPJ</dt><dd>24.743.590/0001-00</dd>
+          <dt>Abertura</dt><dd>23/04/2016</dd>
+          <dt>Porte</dt><dd>ME</dd>
+          <dt>Natureza juridica</dt><dd>Sociedade Empresaria Limitada</dd>
         </dl>
       </article>
 
       <article class="card">
-        <h2>Address</h2>
+        <h2>Endereco</h2>
         <dl>
-          <dt>Street</dt><dd>R Heitor Stockler de Franca, 396</dd>
-          <dt>Additional info</dt><dd>Sala 204 - Andar 02 - Cond. Neo Super</dd>
-          <dt>District</dt><dd>Centro Civico</dd>
-          <dt>City/State</dt><dd>Curitiba - PR</dd>
-          <dt>ZIP</dt><dd>80.030-030</dd>
+          <dt>Logradouro</dt><dd>R Heitor Stockler de Franca, 396</dd>
+          <dt>Complemento</dt><dd>Sala 204 - Andar 02 - Cond. Neo Super</dd>
+          <dt>Bairro</dt><dd>Centro Civico</dd>
+          <dt>Cidade/UF</dt><dd>Curitiba - PR</dd>
+          <dt>CEP</dt><dd>80.030-030</dd>
         </dl>
       </article>
     </section>
 
     <section class="card contact">
       <div>
-        <h2 style="margin: 0 0 6px;">Institutional contact</h2>
+        <h2 style="margin: 0 0 6px;">Contato institucional</h2>
         <p style="margin: 0; color: var(--muted);">
-          Commercial page used for company identification with partners and digital platforms.
+          Pagina comercial para identificacao da empresa junto a parceiros e plataformas digitais.
         </p>
       </div>
       <a href="mailto:wsgtecnologias@gmail.com">wsgtecnologias@gmail.com</a>
     </section>
 
     <footer>
-      WSG Tecnologias LTDA - Tax ID 24.743.590/0001-00 - Curitiba/PR - Brazil
+      WSG Tecnologias LTDA - CNPJ 24.743.590/0001-00 - Curitiba/PR - Brasil
     </footer>
   </main>
 
