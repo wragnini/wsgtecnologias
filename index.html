@@ -197,6 +197,88 @@
       font-weight: 600;
     }
 
+    .business-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .point {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      background: #fcfefd;
+    }
+
+    .point h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .point p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .metrics {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      background: #fcfefd;
+    }
+
+    .metric b {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .metric span {
+      display: block;
+      font-size: 15px;
+      line-height: 1.35;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .cta {
+      margin-top: 18px;
+      background:
+        linear-gradient(135deg, #ffffff 0%, #f2fbf9 100%);
+    }
+
+    .cta p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .cta-action {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid #9fd7d1;
+      background: #e9f8f5;
+      color: #0f5f58;
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
     .contact-grid {
       margin-top: 18px;
       display: grid;
@@ -239,6 +321,14 @@
         grid-template-columns: 1fr;
       }
 
+      .business-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .contact-grid {
         grid-template-columns: 1fr;
       }
@@ -260,19 +350,18 @@
         <span class="tag">Institutional profile</span>
         <h1>WSG Tecnologias LTDA</h1>
         <p class="subtitle">
-          WSG Tecnologias LTDA builds digital products and applications with a strong focus on
-          performance, reliability, and user experience. We support the full cycle, from planning
-          and engineering to continuous online operations.
+          We help businesses turn ideas into digital products and applications ready to grow.
+          Our lean team works with direct communication and a strong focus on stability from day one.
         </p>
       </div>
       <div class="highlights">
         <article class="stat">
           <b>Business</b>
-          <span>Digital products and apps</span>
+          <span>Custom apps and platforms</span>
         </article>
         <article class="stat">
           <b>Specialty</b>
-          <span>Software engineering</span>
+          <span>Lean technical execution</span>
         </article>
         <article class="stat">
           <b>Headquartered in</b>
@@ -288,9 +377,9 @@
     <section class="card" style="margin-top: 18px;">
       <h2>What we deliver</h2>
       <p>
-        We design, launch, and continuously improve digital solutions for different business needs.
-        Our operation includes software architecture, mobile development, backend services,
-        service integrations, and technical support to keep products stable in production.
+        We design and operate digital products with a business-oriented approach. We handle
+        architecture, development, integrations, and ongoing support so client teams can stay
+        focused on sales, service, and growth.
       </p>
       <div class="chips">
         <span class="chip">iOS and Android Apps</span>
@@ -305,12 +394,64 @@
     </section>
 
     <section class="card" style="margin-top: 18px;">
+      <h2>Why work with WSG</h2>
+      <div class="business-grid">
+        <article class="point">
+          <h3>Direct execution</h3>
+          <p>The same team that plans the solution also builds it, reducing handoffs.</p>
+        </article>
+        <article class="point">
+          <h3>Practical quality</h3>
+          <p>Clear architecture, sustainable code, and practical technical decisions.</p>
+        </article>
+        <article class="point">
+          <h3>Continuous evolution</h3>
+          <p>After launch, we keep short cycles for support and product improvement.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top: 18px;">
+      <h2>Delivery commitments</h2>
+      <p style="margin: 0; color: var(--muted);">
+        Lean operation focused on predictability, continuity, and close communication.
+      </p>
+      <div class="metrics">
+        <article class="metric">
+          <b>Planning</b>
+          <span>Scope aligned with business priorities</span>
+        </article>
+        <article class="metric">
+          <b>Evolution</b>
+          <span>Continuous improvements after each release</span>
+        </article>
+        <article class="metric">
+          <b>Onboarding</b>
+          <span>Clear goals and defined next steps</span>
+        </article>
+        <article class="metric">
+          <b>Technical contact</b>
+          <span>Direct communication with the delivery team</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top: 18px;">
       <h2>How we work</h2>
       <p>
         The company follows a practical, outcome-driven approach, prioritizing technical quality,
         information security, and service continuity. Every project is treated as a living product,
         with ongoing monitoring, refinement, and evolution.
       </p>
+    </section>
+
+    <section class="card cta">
+      <h2>Need to launch or improve an app?</h2>
+      <p>
+        WSG works with companies looking for a close technical partner to build and evolve products
+        with accountability and consistent delivery pace.
+      </p>
+      <a class="cta-action" href="mailto:contato@wsgtecnologias.com.br">Talk to the company</a>
     </section>
 
     <section class="contact-grid">
@@ -334,7 +475,7 @@
       </article>
     </section>
 
-    <footer>
+    <footer id="footer-contact">
       WSG Tecnologias LTDA - Tax ID 24.743.590/0001-00 - Curitiba/PR - Brazil -
       <a href="mailto:contato@wsgtecnologias.com.br">contato@wsgtecnologias.com.br</a>
     </footer>
