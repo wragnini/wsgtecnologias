@@ -143,13 +143,6 @@
       color: var(--ink);
     }
 
-    .grid {
-      margin-top: 18px;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-
     .card {
       background: var(--surface);
       border: 1px solid var(--line);
@@ -182,41 +175,22 @@
       font-weight: 600;
     }
 
-    dl {
-      margin: 0;
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      gap: 10px 12px;
-    }
-
-    dt {
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    dd {
-      margin: 0;
-      font-size: 15px;
-      color: #1e2b2b;
-      font-weight: 600;
-    }
-
-    .contact {
+    .contact-grid {
       margin-top: 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 16px;
     }
 
-    .contact a {
-      color: var(--ink);
-      font-weight: 800;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(19, 32, 33, 0.25);
+    .contact {
+      margin-top: 0;
+    }
+
+    .address {
+      margin: 0;
+      color: var(--muted);
+      font-style: normal;
+      line-height: 1.6;
     }
 
     footer {
@@ -226,25 +200,25 @@
       text-align: center;
     }
 
+    footer a {
+      color: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(83, 99, 100, 0.35);
+    }
+
     @keyframes rise {
       from { opacity: 0; transform: translateY(12px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     @media (max-width: 900px) {
-      .hero,
-      .grid {
+      .hero {
         grid-template-columns: 1fr;
       }
 
-      dl {
+      .contact-grid {
         grid-template-columns: 1fr;
-        gap: 5px 0;
-      }
-
-      .contact {
-        flex-direction: column;
-        align-items: flex-start;
       }
     }
   </style>
@@ -261,89 +235,86 @@
 
     <section class="hero">
       <div>
-        <span class="tag">Situação ativa</span>
+        <span class="tag">Perfil institucional</span>
         <h1>WSG Tecnologias LTDA</h1>
         <p class="subtitle">
-          Empresa de tecnologia da informação focada em desenvolvimento de software,
-          operação de sistemas online e suporte técnico para produtos digitais.
+          A WSG Tecnologias LTDA atua no desenvolvimento de produtos digitais e aplicativos,
+          com foco em performance, estabilidade e experiência do usuário. Trabalhamos do
+          planejamento à operação contínua de soluções online.
         </p>
       </div>
       <div class="highlights">
         <article class="stat">
-          <b>CNPJ</b>
-          <span>24.743.590/0001-00</span>
+          <b>Atuação</b>
+          <span>Produtos digitais e aplicativos</span>
         </article>
         <article class="stat">
-          <b>Abertura</b>
-          <span>23/04/2016</span>
-        </article>
-        <article class="stat">
-          <b>Porte</b>
-          <span>ME</span>
+          <b>Especialidade</b>
+          <span>Engenharia de software</span>
         </article>
         <article class="stat">
           <b>Base</b>
-          <span>Curitiba - PR</span>
+          <span>Curitiba, Paraná - Brasil</span>
+        </article>
+        <article class="stat">
+          <b>Desde</b>
+          <span>2016</span>
         </article>
       </div>
     </section>
 
     <section class="card" style="margin-top: 18px;">
-      <h2>Setor de atuação</h2>
+      <h2>O que a empresa entrega</h2>
       <p>
-        A WSG Tecnologias LTDA desenvolve e mantém aplicações digitais, sistemas backend,
-        plataformas online e serviços de processamento de dados. A empresa presta serviços
-        de desenvolvimento de software, suporte técnico e operação de sistemas de comunicação online.
+        Desenvolvemos, publicamos e evoluímos soluções digitais para diferentes cenários de negócio.
+        Nossa operação inclui arquitetura de software, desenvolvimento de aplicativos, serviços backend,
+        integrações e suporte técnico para manter os produtos confiáveis em produção.
       </p>
       <div class="chips">
-        <span class="chip">Desenvolvimento de Software</span>
-        <span class="chip">Aplicativos Mobile</span>
-        <span class="chip">Backend e APIs</span>
-        <span class="chip">Sistemas Online</span>
-        <span class="chip">Processamento de Dados</span>
-        <span class="chip">Suporte Técnico em TI</span>
-        <span class="chip">Plataformas de Comunicação</span>
-        <span class="chip">Serviços Web</span>
+        <span class="chip">Aplicativos iOS e Android</span>
+        <span class="chip">Plataformas Web</span>
+        <span class="chip">APIs e Backend</span>
+        <span class="chip">Integração de Serviços</span>
+        <span class="chip">Operação de Sistemas Online</span>
+        <span class="chip">Suporte Técnico</span>
+        <span class="chip">Manutenção Evolutiva</span>
+        <span class="chip">Melhoria Contínua</span>
       </div>
     </section>
 
-    <section class="grid">
-      <article class="card">
-        <h2>Identificação</h2>
-        <dl>
-          <dt>Razão social</dt><dd>WSG TECNOLOGIAS LTDA</dd>
-          <dt>Nome fantasia</dt><dd>WSG TECNOLOGIAS</dd>
-          <dt>CNPJ</dt><dd>24.743.590/0001-00</dd>
-          <dt>Abertura</dt><dd>23/04/2016</dd>
-          <dt>Porte</dt><dd>ME</dd>
-          <dt>Natureza jurídica</dt><dd>Sociedade Empresária Limitada</dd>
-        </dl>
-      </article>
-
-      <article class="card">
-        <h2>Endereço</h2>
-        <dl>
-          <dt>Logradouro</dt><dd>R Heitor Stockler de Franca, 396</dd>
-          <dt>Complemento</dt><dd>Sala 204 - Andar 02 - Cond. Neo Super</dd>
-          <dt>Bairro</dt><dd>Centro Cívico</dd>
-          <dt>Cidade/UF</dt><dd>Curitiba - PR</dd>
-          <dt>CEP</dt><dd>80.030-030</dd>
-        </dl>
-      </article>
+    <section class="card" style="margin-top: 18px;">
+      <h2>Modelo de trabalho</h2>
+      <p>
+        A empresa opera com abordagem prática e orientada a resultado, priorizando qualidade técnica,
+        segurança da informação e continuidade dos serviços. Cada projeto é tratado como produto vivo,
+        com acompanhamento de performance e evolução constante.
+      </p>
     </section>
 
-    <section class="card contact">
-      <div>
+    <section class="contact-grid">
+      <article class="card contact">
         <h2 style="margin: 0 0 6px;">Contato institucional</h2>
         <p style="margin: 0; color: var(--muted);">
-          Página comercial para identificação da empresa junto a parceiros e plataformas digitais.
+          Canal para validação corporativa, contato comercial e assuntos relacionados aos produtos digitais da empresa.
+          Esta página é usada para identificação junto a parceiros e plataformas, incluindo processos de
+          verificação para publicação de aplicativos.
         </p>
-      </div>
-      <a href="mailto:contato@wsgtecnologias.com.br">contato@wsgtecnologias.com.br</a>
+      </article>
+      <article class="card">
+        <h2 style="margin: 0 0 6px;">Endereço institucional</h2>
+        <address class="address">
+          R. Heitor Stockler de Franca, 396<br />
+          Sala 204 - Andar 02 - Cond. Neo Super<br />
+          Centro Cívico<br />
+          Curitiba - PR, 80.030-030<br />
+          Brasil
+        </address>
+      </article>
     </section>
 
     <footer>
-      WSG Tecnologias LTDA - CNPJ 24.743.590/0001-00 - Curitiba/PR - Brasil
+      WSG Tecnologias LTDA - CNPJ 24.743.590/0001-00 - Curitiba/PR - Brasil -
+      <a href="mailto:contato@wsgtecnologias.com.br">contato@wsgtecnologias.com.br</a>
     </footer>
   </main>
 

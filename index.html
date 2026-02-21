@@ -165,13 +165,6 @@
       color: var(--ink);
     }
 
-    .grid {
-      margin-top: 18px;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-
     .card {
       background: var(--surface);
       border: 1px solid var(--line);
@@ -204,41 +197,22 @@
       font-weight: 600;
     }
 
-    dl {
-      margin: 0;
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      gap: 10px 12px;
-    }
-
-    dt {
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    dd {
-      margin: 0;
-      font-size: 15px;
-      color: #1e2b2b;
-      font-weight: 600;
-    }
-
-    .contact {
+    .contact-grid {
       margin-top: 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 16px;
     }
 
-    .contact a {
-      color: var(--ink);
-      font-weight: 800;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(19, 32, 33, 0.25);
+    .contact {
+      margin-top: 0;
+    }
+
+    .address {
+      margin: 0;
+      color: var(--muted);
+      font-style: normal;
+      line-height: 1.6;
     }
 
     footer {
@@ -248,25 +222,25 @@
       text-align: center;
     }
 
+    footer a {
+      color: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(83, 99, 100, 0.35);
+    }
+
     @keyframes rise {
       from { opacity: 0; transform: translateY(12px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     @media (max-width: 900px) {
-      .hero,
-      .grid {
+      .hero {
         grid-template-columns: 1fr;
       }
 
-      dl {
+      .contact-grid {
         grid-template-columns: 1fr;
-        gap: 5px 0;
-      }
-
-      .contact {
-        flex-direction: column;
-        align-items: flex-start;
       }
     }
   </style>
@@ -283,90 +257,86 @@
 
     <section class="hero">
       <div>
-        <span class="tag">Active status</span>
+        <span class="tag">Institutional profile</span>
         <h1>WSG Tecnologias LTDA</h1>
         <p class="subtitle">
-          Information technology company focused on software development,
-          online systems operations, and technical support for digital products.
+          WSG Tecnologias LTDA builds digital products and applications with a strong focus on
+          performance, reliability, and user experience. We support the full cycle, from planning
+          and engineering to continuous online operations.
         </p>
       </div>
       <div class="highlights">
         <article class="stat">
-          <b>Tax ID</b>
-          <span>24.743.590/0001-00</span>
+          <b>Business</b>
+          <span>Digital products and apps</span>
         </article>
         <article class="stat">
-          <b>Opening Date</b>
-          <span>23/04/2016</span>
+          <b>Specialty</b>
+          <span>Software engineering</span>
         </article>
         <article class="stat">
-          <b>Company Size</b>
-          <span>ME</span>
+          <b>Headquartered in</b>
+          <span>Curitiba, Parana - Brazil</span>
         </article>
         <article class="stat">
-          <b>Location</b>
-          <span>Curitiba - PR</span>
+          <b>Operating since</b>
+          <span>2016</span>
         </article>
       </div>
     </section>
 
     <section class="card" style="margin-top: 18px;">
-      <h2>Business scope</h2>
+      <h2>What we deliver</h2>
       <p>
-        WSG Tecnologias LTDA develops and maintains digital applications,
-        backend systems, online platforms, and data processing services.
-        The company provides software development, technical support,
-        and online communication systems operations.
+        We design, launch, and continuously improve digital solutions for different business needs.
+        Our operation includes software architecture, mobile development, backend services,
+        service integrations, and technical support to keep products stable in production.
       </p>
       <div class="chips">
-        <span class="chip">Software Development</span>
-        <span class="chip">Mobile Applications</span>
+        <span class="chip">iOS and Android Apps</span>
+        <span class="chip">Web Platforms</span>
         <span class="chip">Backend and APIs</span>
-        <span class="chip">Online Systems</span>
-        <span class="chip">Data Processing</span>
-        <span class="chip">IT Technical Support</span>
-        <span class="chip">Communication Platforms</span>
-        <span class="chip">Web Services</span>
+        <span class="chip">Service Integrations</span>
+        <span class="chip">Online Systems Operations</span>
+        <span class="chip">Technical Support</span>
+        <span class="chip">Product Maintenance</span>
+        <span class="chip">Continuous Improvement</span>
       </div>
     </section>
 
-    <section class="grid">
-      <article class="card">
-        <h2>Company details</h2>
-        <dl>
-          <dt>Corporate name</dt><dd>WSG TECNOLOGIAS LTDA</dd>
-          <dt>Trade name</dt><dd>WSG TECNOLOGIAS</dd>
-          <dt>Tax ID</dt><dd>24.743.590/0001-00</dd>
-          <dt>Opening date</dt><dd>23/04/2016</dd>
-          <dt>Company size</dt><dd>ME</dd>
-          <dt>Legal nature</dt><dd>Sociedade Empresaria Limitada</dd>
-        </dl>
-      </article>
-
-      <article class="card">
-        <h2>Address</h2>
-        <dl>
-          <dt>Street</dt><dd>R Heitor Stockler de Franca, 396</dd>
-          <dt>Additional info</dt><dd>Sala 204 - Andar 02 - Cond. Neo Super</dd>
-          <dt>District</dt><dd>Centro Civico</dd>
-          <dt>City/State</dt><dd>Curitiba - PR</dd>
-          <dt>ZIP</dt><dd>80.030-030</dd>
-        </dl>
-      </article>
+    <section class="card" style="margin-top: 18px;">
+      <h2>How we work</h2>
+      <p>
+        The company follows a practical, outcome-driven approach, prioritizing technical quality,
+        information security, and service continuity. Every project is treated as a living product,
+        with ongoing monitoring, refinement, and evolution.
+      </p>
     </section>
 
-    <section class="card contact">
-      <div>
+    <section class="contact-grid">
+      <article class="card contact">
         <h2 style="margin: 0 0 6px;">Institutional contact</h2>
         <p style="margin: 0; color: var(--muted);">
-          Commercial page used for company identification with partners and digital platforms.
+          Corporate channel for validation, commercial requests, and matters related to the company's digital products.
+          This page is used for company identification with partners and platforms, including app publishing
+          verification processes.
         </p>
-      </div>
-      <a href="mailto:contato@wsgtecnologias.com.br">contato@wsgtecnologias.com.br</a>
+      </article>
+      <article class="card">
+        <h2 style="margin: 0 0 6px;">Business address</h2>
+        <address class="address">
+          R. Heitor Stockler de Franca, 396<br />
+          Suite 204 - 2nd Floor - Neo Super Building<br />
+          Centro Civico<br />
+          Curitiba - PR, 80.030-030<br />
+          Brazil
+        </address>
+      </article>
     </section>
 
     <footer>
-      WSG Tecnologias LTDA - Tax ID 24.743.590/0001-00 - Curitiba/PR - Brazil
+      WSG Tecnologias LTDA - Tax ID 24.743.590/0001-00 - Curitiba/PR - Brazil -
+      <a href="mailto:contato@wsgtecnologias.com.br">contato@wsgtecnologias.com.br</a>
     </footer>
   </main>
 
